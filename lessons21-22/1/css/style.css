@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+ul, li {
+    list-style: none;
+}
+h1 {
+    font-size: 70px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    letter-spacing: 4px;
+}
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.slider__mainPhoto {
+    width: 190px;
+    height: 265px;
+    padding-top: 20px;
+	margin: 0 auto;
+	margin-bottom: -30px;
+}
+.slider__thumbnails {
+	display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+	margin-left: 40px;
+	margin-right: 80px;
+}
+
+
+
+
+.headerBlock {
+    background: #b9b8b8;
+    margin-bottom: 60px;
+}
+.header{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+	height: 120px;
+
+}
+
+.logotype {
+    display: flex;
+    align-items: center;
+}
+.logotype__img {
+    width: 160px;
+	height: 53px;
+}
+.logotype__name {
+    font-size: 18px;
+    margin-left: 10px;
+    line-height: 1;
+}
+.logotype__name p:first-child {
+    margin-bottom: 5px;
+}
+.best {
+	font-size: 30px;
+	font-weight: 900;
+}
+
+
+.headerMenu {
+    font-size: 18px;
+	display: flex;
+}
+.headerMenu__item {
+	margin-right: 55px;
+	border-bottom: 1px solid transparent;
+}
+.headerMenu__item:last-child {
+	margin-right: 0;
+}
+.headerMenu__item:hover {
+	cursor: pointer;
+    color: white;
+    border-color: white;
+}
+
+
+.mainContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.mainTitle {
+    max-width: 730px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+.mainTitle__descr {
+    font-size: 24px;
+    color: #8e8e8e;
+}
+.mainTitle__descr-top {
+    font-size: 40px;
+    text-align: right;
+    margin-bottom: -15px;
+}
+
+.productsBlock {
+	
+}
+.productsBlock__title {
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.productsBlock__content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 115px;
+}
+.card {
+    padding: 30px 20px;
+    border: 1px solid grey;
+    border-radius: 20px;
+	max-width: 400px;
+    max-height: 730px;
+	margin: 0 40px 40px 0 ;
+}
+.card:nth-child(even) {
+	margin-right: 0;
+}
+.card:hover {
+	cursor: pointer;
+	box-shadow: 10px 10px lightgray;
+	opasity: .3;
+}
+
+.card__title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card__title a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    color: #3583b0;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #3583b0;
+}
+.cardInfo {
+    display: flex;
+    justify-content: center;
+}
+.cardInfo__title {
+	border-bottom: 1px solid lightgray;
+	padding-top: 20px;
+	font-size: 18px;
+}
+.cardInfo__item {
+    width: 50%;
+}
+.cardInfo_item-content {
+	padding-top: 10px;
+	font-size: 100%;
+}
+.cardInfo__iten-content2 {
+	padding-top: 10px;
+	font-size: 100%;
+}
+.cardDescription {
+	padding-top: 50px;
+}
+.cardDescription__title {
+	border-bottom: 1px solid lightgray;
+	font-size: 18px;
+}
+.cardDescription_content {
+	padding-top: 10px;
+}
+.card-button {
+    width: 235px;
+    height: 38px;
+    background-color: #d4ffa6;
+    border-radius: 20px;
+    margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 30px;
+    display: block;
+}
+.card-button:hover {
+	cursor: pointer;
+	background: #89c249;
+}
+.card-buttonBuy {
+    text-align: center;
+    font-size: 100%;
+    color: black;
+    margin: 20px;
+    padding-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+.card-buttonBuy:hover {
+	color: white;
+	cursor: pointer;
+}
+.descriptionLink {
+	display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.descriptionLink__item {
+max-width: 180px;
+}
+.descriptionLink__item a{
+	word-wrap: break-word;
+}
+
+.descriptionLink__item span {
+	font-size: 16px;
+	color: grey;
+}
+
+.footer{
+    padding: 5% 12% 0% 12%;
+    width:1820;
+	height: 80px;
+    background: #474747;
+}
+.footer-content {
+    text-align: left;
+	color: white;
+}
+.footer-content_item {
+	font-size: 1,2 em;
+	color: white;
+	list-style: circle;
+}
+.copy {
+	font-size: 1,2 em;
+	color: darkgrey;
+	text-align: right;
+}
+
