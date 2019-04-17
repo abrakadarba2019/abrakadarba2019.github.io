@@ -1,0 +1,121 @@
+.mainBlock {
+	position: relative;
+	max-width: 700px;
+	height: 500px;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+.mainBlock::before {
+	content: '';
+	background: url(../img/bg.jpg) no-repeat center/contain;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .3;
+	z-index: -1;
+}
+.mainMenu {
+	position: relative;		
+}
+.mainMenu__items {
+	display: flex;
+	justify-content: center;
+}
+.mainMenu__burgerMenu {
+	display: none;
+	width: 30px;
+	height: 20px;
+	padding: 5px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	flex-direction: column;
+	justify-content: center;
+}
+.mainMenu__burgerMenu span {
+	display: block;
+	width: 100%;
+	height: 3px;
+	background: grey;
+	margin-bottom: 3px;
+}
+.mainMenu__burgerMenu span:last-child {
+	margin-bottom: 0;
+}
+.mainMenu__item {
+	padding: 5px 10px;
+	list-style: none;
+}
+.mainMenu__item a {
+	color: black;
+	text-decoration: none;
+	position: relative;
+}
+.mainMenu__item a::before {
+	content: '';
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	width: 100%;
+	height: 0;
+	transition: height .3s;
+	background: #AFEEEE;
+}
+.mainMenu__item a:hover::before {
+	height: 5px;
+}
+.mainBlock__content {
+	position: relative;
+	width: 100%;
+	background: transparent;
+	margin: 0 auto;
+	height: 500px;
+}
+.manageElem {
+	background: #40E0D0;
+}
+.manageElem__item {
+	/*
+	text-align: center;
+	line-height: 50px;
+	*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: white;
+	box-shadow: 1px 1px 5px rgba(0,0,0, .3);
+}
+.manageElem__item-right  {
+	right: 15px;
+	transform: translateY(-50%) rotate(180deg);
+}
+.manageElem__item-left  {
+	left: 15px;
+}
+
+@media screen and ( max-width: 600px ){
+	.mainMenu {
+		position: absolute;
+		top: 10px;
+		right: 30px;
+	}
+	.mainMenu:hover .mainMenu__items {
+		display: block;
+	}
+	.mainMenu__items {
+		display: none;
+		position: absolute;
+		top: 15px;
+		right: -10px;
+	}
+	.mainMenu__burgerMenu {
+		display: flex;
+	}
+}
